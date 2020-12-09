@@ -61,7 +61,8 @@ plutoIPTV.grabJSON(function (err, channels) {
   // M3U8 Playlist //
   ///////////////////
 
-  let m3u8 = '';
+  let m3u8 = `npx pluto-iptv
+`;
   channels.forEach((channel) => {
     let deviceId = uuid1();
     let sid = uuid4();
